@@ -1,0 +1,71 @@
+html_content = """
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рейтинг Блюд</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Рейтинг Моих Любимых/Нелюбимых Блюд</h1>
+    <table>
+        <tr>
+            <th>Название Блюда</th>
+            <th>Оценка</th>
+            <th>Ссылка на Рецепт</th>
+            <th>Фото Блюда</th>
+        </tr>
+        <tr>
+            <td>Пицца</td>
+            <td>9</td>
+            <td><a href="https://www.example.com/pizza-recipe" target="_blank">Рецепт Пиццы</a></td>
+            <td><img src="https://www.example.com/pizza.jpg" alt="Пицца" width="100"></td>
+        </tr>
+        <tr>
+            <td>Суши</td>
+            <td>8</td>
+            <td><a href="https://www.example.com/sushi-recipe" target="_blank">Рецепт Суши</a></td>
+            <td><img src="https://www.example.com/sushi.jpg" alt="Суши" width="100"></td>
+        </tr>
+        <tr>
+            <td>Борщ</td>
+            <td>7</td>
+            <td><a href="https://www.example.com/borscht-recipe" target="_blank">Рецепт Борща</a></td>
+            <td><img src="https://www.example.com/borscht.jpg" alt="Борщ" width="100"></td>
+        </tr>
+        <tr>
+            <td>Паста</td>
+            <td>6</td>
+            <td><a href="https://www.example.com/pasta-recipe" target="_blank">Рецепт Пасты</a></td>
+            <td><img src="https://www.example.com/pasta.jpg" alt="Паста" width="100"></td>
+        </tr>
+        <tr>
+            <td>Овсянка</td>
+            <td>5</td>
+            <td><a href="https://www.example.com/oatmeal-recipe" target="_blank">Рецепт Овсянки</a></td>
+            <td><img src="https://www.example.com/oatmeal.jpg" alt="Овсянка" width="100"></td>
+        </tr>
+    </table>
+</body>
+</html>
+"""
+
+# Сохраняем HTML-код в файл
+with open("favorite_dishes.html", "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+print("HTML файл был успешно создан: favorite_dishes.html")
