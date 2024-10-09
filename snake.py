@@ -1,5 +1,5 @@
 import pygame
-import time
+import vremya
 import random
 
 # Инициализация Pygame

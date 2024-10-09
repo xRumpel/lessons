@@ -1,5 +1,5 @@
 # Импортируем модуль со временем
-import time
+import vremya
 # Импортируем модуль csv
 import csv
 # Импортируем Selenium
