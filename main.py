@@ -3,7 +3,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def porreriana():
+def potteriana():
     return render_template("index.html") # Внутри () пишем название html-файла в кавычках
 
 @app.route("/heroes/")
